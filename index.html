@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstream Downstream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon1.png" sizes="64x64">
+</head>
+<body>
+    <!-- PAGE LOADING ANIMATION -->
+    <div class="page-loading" id="pageLoading">
+        <img src="Logo.png" alt="Loading" class="loading-logo">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Experience...</div>
+    </div>
+    
+
+    
+    <!-- NAVIGATION BAR AT TOP -->
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Upstream Downstream Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#focus">services</a></li>
+                <li><a href="#contact" class="contact-link">contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" aria-label="Close navigation">&times;</button>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#focus">services</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </aside>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1><span class="upstream">UpStream</span> <span class="downstream">DownStream</span></h1>
+            <a href="#contact" class="start-convo-btn">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- UPSTREAM STRATEGIES SECTION -->
+    <section class="strategies-section">
+        <div class="section-content">
+            <h2 class="animate-on-scroll delay-1">Upstream Strategies. Downstream Actions.</h2>
+            <p class="animate-on-scroll delay-2">We help communities and organizations turn vision into reality, bridging strategy with implementation to build thriving places.</p>
+            <p class="animate-on-scroll delay-3"><strong>Upstream Downstream, LLC</strong> works with communities, institutions, and partners to turn big challenges into local impact. We provide strategic advising and implementation support across the full arc of change, offering streamlined and practical approaches to complex problems and long-term objectives.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+        <div class="section-content">
+            <h2 class="animate-on-scroll">About Us</h2>
+            <div class="about-layout">
+                <div class="about-text-content">
+                    <h3 class="about-tagline animate-on-scroll delay-1">Rooted in Place. Flowing with Purpose.</h3>
+                    
+                    <div class="about-description animate-on-scroll delay-2">
+                        <p><strong>Upstream Downstream</strong> is a place-focused advisory firm that helps communities navigate the full arc of change from vision and strategy to practical, on-the-ground implementation. We work at the intersection of planning, placemaking, community investment, and local leadership to catalyze resilient and thriving places.</p>
+                        
+                        <p>We believe that upstream thinking — vision, planning, policy shapes downstream outcomes like economic opportunity, development readiness, place vitality, and community resilience. Like a river system, our work flows from insight to impact. Our work is grounded in lived experience, guided by local knowledge, and designed to move with the flow of community priorities.</p>
+                    </div>
+                    
+                    <div class="what-we-bring animate-on-scroll delay-3">
+                        <h4>What We Bring:</h4>
+                        <ul>
+                            <li class="animate-on-scroll delay-4">Strategic clarity in complex systems and policies</li>
+                            <li class="animate-on-scroll delay-5">Deep understanding of rural and small-town dynamics</li>
+                            <li class="animate-on-scroll delay-6">Facilitation and co-design that center community voice</li>
+                            <li class="animate-on-scroll delay-7">Place-based, people-focused community development</li>
+                            <li class="animate-on-scroll delay-8">Funding fluency and investment readiness</li>
+                            <li class="animate-on-scroll delay-9">Practical support from vision to execution</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="founder-profile-sidebar animate-on-scroll delay-2">
+                    <div class="founder-card-simple">
+                        <img src="AmoreHeadshot.JPG" alt="Richard Amore" class="founder-photo">
+                        <div class="founder-info">
+                            <h4>Meet Our Founder & CEO</h4>
+                            <div class="founder-name-section">
+                                <div class="founder-name">Richard Amore</div>
+                                <button class="bio-toggle-btn" onclick="toggleFounderBio()"><span>+</span></button>
+                            </div>
+                            <div class="founder-bio expandable-bio" id="founderBio">
+Richard Amore is a rural community and economic development leader, professional landscape architect, certified planner, and educator with over two decades of experience advancing place-based strategies that strengthen local economies, resilience, and belonging. From small towns to statewide initiatives, Richard brings a collaborative approach rooted in equity, local leadership, and a deep belief in the power of place to shape community well-being and prosperity. <a href="https://www.linkedin.com/in/richardamore/" target="_blank" rel="noopener noreferrer" class="richard-link">Learn more about Richard.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GREEN IMAGE SECTION WITH PODCAST OVERLAY -->
+    <section class="green-image-section">
+        <img src="green.png" alt="Green Background" class="green-background-image">
+        <div class="green-image-overlay">
+            <h2 class="podcast-overlay-heading">Listen To Our Podcast</h2>
+            <a href="https://healthycommunitiesvt.com/podcast/" target="_blank" rel="noopener noreferrer" class="podcast-overlay-button">
+                <span class="podcast-icon">🎧</span> Small Towns, Healthy Places
+            </a>
+            <p class="state-vermont-text">Created while at State of Vermont</p>
+        </div>
+    </section>
+
+    <!-- OUR APPROACH SECTION -->
+    <section class="approach-section" id="approach">
+        <div class="section-content">
+            <h2 class="animate-on-scroll">Our Approach</h2>
+            <h3 class="approach-subtitle animate-on-scroll delay-1">We meet complexity with clarity and communities with care.</h3>
+            
+            <div class="approach-description-box animate-on-scroll delay-2">
+                <p>At Upstream Downstream, our approach is both strategic and relational. We believe durable solutions come from the intersection of systems thinking and place-based action. That's why we walk alongside our partners from upstream ideas to downstream implementation, helping translate vision into grounded progress.</p>
+            </div>
+            
+            <div class="approach-steps">
+                <div class="approach-step-item animate-on-scroll delay-3">
+                    <h4>Listen Deeply</h4>
+                    <p>We start with people, place, and purpose. Local voices and lived experience are our compass.</p>
+                </div>
+                
+                <div class="approach-step-item animate-on-scroll delay-4">
+                    <h4>Map the System</h4>
+                    <p>We help communities see the big picture then find leverage points for meaningful change.</p>
+                </div>
+                
+                <div class="approach-step-item animate-on-scroll delay-5">
+                    <h4>Co-Design Solutions</h4>
+                    <p>Our work is collaborative, practical, and tailored to each place.</p>
+                </div>
+                
+                <div class="approach-step-item animate-on-scroll delay-6">
+                    <h4>Bridge Vision and Action</h4>
+                    <p>We turn upstream strategy into downstream momentum—supporting real projects, not just plans.</p>
+                </div>
+                
+                <div class="approach-step-item animate-on-scroll delay-7">
+                    <h4>Stay Rooted</h4>
+                    <p>We build trust, support capacity, and walk with partners for the long haul.</p>
+                </div>
+                
+                <div class="approach-step-item animate-on-scroll delay-8">
+                    <h4>Measure Impact</h4>
+                    <p>We track progress, celebrate wins, and adapt strategies based on real-world outcomes and community feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOCUS AREAS SECTION -->
+    <section class="focus-areas-section" id="focus">
+        <div class="section-content">
+            <h2 class="animate-on-scroll">What We Do</h2>
+            <h3 class="animate-on-scroll delay-1">Bridging Vision with Implementation</h3>
+            <p class="animate-on-scroll delay-2">We provide strategic advising and implementation support across the full arc of community development, helping turn big challenges into local impact through streamlined and practical approaches.</p>
+            
+            <div class="focus-areas-grid">
+                <div class="focus-area animate-on-scroll delay-3">
+                    <h4>Strategic Advising</h4>
+                    <p>Helping communities and organizations align long-term vision with funding, policy, and partnerships for sustainable impact.</p>
+                    <ul>
+                        <li>Vision alignment & strategic planning</li>
+                        <li>Policy analysis & advocacy support</li>
+                        <li>Funding strategy & resource development</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-area animate-on-scroll delay-4">
+                    <h4>Community and Place-based Investment</h4>
+                    <p>Designing inclusive, locally grounded approaches to capital and development for long-term community prosperity.</p>
+                    <ul>
+                        <li>Investment strategy & capital planning</li>
+                        <li>Community-led development approaches</li>
+                        <li>Equitable development frameworks</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-area animate-on-scroll delay-5">
+                    <h4>Placemaking and Inclusive Mobility</h4>
+                    <p>Co-creating public spaces and mobility options that reflect local priorities and advance community wellbeing.</p>
+                    <ul>
+                        <li>Public space design & activation</li>
+                        <li>Transportation planning & accessibility</li>
+                        <li>Community engagement & co-design</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-area animate-on-scroll delay-6">
+                    <h4>Livability and Resilience</h4>
+                    <p>Supporting climate adaptation, nature-based solutions, and infrastructure strategies for thriving communities.</p>
+                    <ul>
+                        <li>Climate adaptation planning</li>
+                        <li>Green infrastructure development</li>
+                        <li>Resilience strategy & implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section class="why-us-section">
+        <div class="section-content">
+            <h2 class="animate-on-scroll">Why Upstream Downstream?</h2>
+            <h3 class="animate-on-scroll delay-1">Because real change flows both ways.</h3>
+            <p class="animate-on-scroll delay-2">We believe that system-level planning and grassroots implementation are two halves of the same whole. With deep experience in community development, place-based solutions, and community-led placemaking, we help turn complexity into clarity and turn big ideas into local impact.</p>
+            <p class="animate-on-scroll delay-3">Our work blends strategy with street-level action so every investment in planning, infrastructure, or development is grounded in place, people, and lasting outcomes. We believe that the most effective solutions are co-created with our clients as trusted advisors. We're co-thinkers, co-designers, and committed allies walking alongside our clients as they make lasting change in their communities.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="section-content">
+            <h1 class="contact-main-heading animate-on-scroll">Let's Build a Future Together!</h1>
+            <p class="animate-on-scroll delay-1">Whether you're shaping a vision, aligning investment, designing a statewide program or revitalizing main street, or need support moving a project forward – we're here to help. <strong>Reach out today to explore how we can work together with purpose.</strong></p>
+            
+            <div class="contact-container">
+                <div class="contact-form-col animate-on-scroll delay-2">
+                    <form class="contact-form" action="https://formspree.io/f/xovwgdrq" method="POST">
+                        <div class="form-group-header">
+                            <label class="section-label">Name (required)</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email (required)</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Your organization</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">How can we help you? (required)</label>
+                            <textarea id="message" name="message" rows="6" placeholder="" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">submit</button>
+                    </form>
+                </div>
+                
+                <div class="contact-image-col animate-on-scroll delay-3">
+                    <img src="Chewey.jpg" alt="Contact Us" class="contact-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo.png" alt="Upstream Downstream Logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Upstream Downstream, LLC. All rights reserved.</p>
+                <p>Rooted in Place. Flowing with Purpose.</p>
+            </div>
+            <div class="footer-contact">
+                <a href="#contact" class="footer-contact-btn">Get in Touch</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
